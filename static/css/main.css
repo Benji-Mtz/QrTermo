@@ -1,0 +1,53 @@
+.baja {
+    background: #0984e3;
+}
+.default {
+    background: #10c018;
+}
+
+.alta {
+    background: #d63031;
+}
+
+.fuente {
+    font-family: 'Roboto', sans-serif;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   }
+   @-webkit-keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+   25%, 75% {
+    opacity: 0;
+    }
+   }
+   @keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+   25%, 75% {
+    opacity: 0;
+    }
+   }
+   .flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+   }
+
+
+   .blink-bg{
+    animation: blinkingBackground 2s infinite;
+}
+@keyframes blinkingBackground{
+    0%		{ background-color: #ef0a1a;}
+    25%		{ background-color: #00b894;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #00b894;}
+    100%	{ background-color: #ef0a1a;}
+}

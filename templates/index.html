@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <title>Totem AG Electrónica</title>
+</head>
+<body class="default">
+
+<div class="container mt-3 align-middle">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-6 d-flex justify-content-center">
+            <div class="card" style="width: 25rem;">
+                
+                  <img class="card-img-top" src="static/img/sinperfil.png" alt="Imagen del empleado">
+                
+                <div class="card-body">
+                  <h2 class="card-title">Datos del Empleado</h2>
+                  <h4 class="card-text">Num. de empleado: <span class="num_emp"> </span></h4>
+                  <h4 class="card-text">Nombre: <span class="nombre"> </span></h4>
+                  <h4 class="card-text">Temperatura: <span class="temperatura"> </span> </h4>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <h6 class="card-text">Hora de registro: <span class="hora"> </span> </h6>
+                  <h6 class="card-text">Contador: <span class="filas"> </span></h6>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
